@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Página Producto</title>
+</head>
+<body>
+    <!-- Encabezado-->
+    <header>
+        <h1>LOGO</h1>
+    </header>
+
+    <!-- Contenedor Nombre Categoria-->
+    <div class="container-title">
+        Zapatos
+    </div>
+    
+    <!-- Cuerpo Principal-->
+    <main>
+
+        <!-- Contenedor de Imagen-->
+        <div class="container-img">
+            <img src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" alt="Imagen Producto">
+        </div>
+
+        <!-- Contenedor de Información del Producto-->
+        <div class="container-info-product">
+
+            <!-- Contenedor de Precio -->
+            <div class="container-price">
+                <span>S/.95.00</span>
+                <i class="fa-solid fa-chevron-right"></i><!-- Icono de Flecha-->
+            </div>
+
+            <!--Contenedor de detalle del producto-->
+            <div class="container-details-product">
+                <div class="form-group"> <!-- Formulario para crear opciones-->
+                    <!-- Etiqueta Color-->
+                    <label for="colour">Color</label>
+                      <!-- Opción Color-->
+                    <select name="colour" id="colour">
+                        <option disabled selected value="">Escoge una Opción</option>
+                        <option value="rojo">Rojo</option>
+                        <option value="Blanco">Blanco</option>
+                        <option value="Beige">Beige</option>
+                    </select>
+                </div>
+                
+                <div class="form-group"> <!--  Formulario para crear opciones -->
+                    <!-- Etiqueta Talla-->
+                    <label for="size">Talla</label>
+                     <!-- Opción Talla-->
+                    <select name="size" id="size">
+                        <option disabled selected value="">Escoge una Opción</option>
+                        <option value="42">40</option>
+                        <option value="42">42</option>
+                        <option value="43">43</option>
+                        <option value="44">44</option>
+                    </select>
+                </div>
+                <button class="btn-clean">Limpiar</button>
+            </div>
+
+            <!-- Contenedor Cantidad-->
+            <div class="container-add-cart">
+                <div class="container-quantity">
+                    <input type="number" placeholder="1" value="1" min="1" class="input-quantity">
+                    <div class="btn-increment-decrement">
+                        <i class="fa-sharp fa-solid fa-chevron-up" id="increment"></i>
+                        <i class="fa-sharp fa-solid fa-chevron-down" id="decrement"></i>
+                    </div>
+                </div>
+                <div class="btn-add-to-cart">
+                    <i class="fa-solid fa-plus"></i>Añadir al Carrito
+                </div>
+            </div>
+
+            <!-- Contenedor Descripción-->
+                <div class="container-description">
+                    <div class="title-description">
+                        <h4>Descripción</h4>
+                        <i class="fa-sharp fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="text-description">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id expedita, 
+                            sed cum tempore totam minima illum assumenda voluptas consequuntur aliquam 
+                            itaque quidem nemo ipsa unde perspiciatis, quaerat eveniet voluptatum alias! 
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita quos, dolorum 
+                            placeat ut neque nobis! Iste enim obcaecati adipisci voluptas dignissimos modi consequuntur, 
+                            nostrum incidunt earum perspiciatis totam. Qui, error.</p>
+                    </div>
+                </div>
+
+                 <!-- Contenedor Información Adicional-->
+                <div class="container-additional-information">
+                    <div class="title-additional-information">
+                        <h4>Información Adicional</h4>
+                        <i class="fa-sharp fa-solid fa-chevron-down"></i>
+                    </div>
+
+                    <div class="text-additional-information hidden">
+                        <p>------</p>
+                    </div>
+                </div>
+
+                <!-- Contenedor Reseñas-->
+                <div class="container-reviews">
+                    <div class="title-reviews">
+                        <h4>Reseñas</h4>
+                        <i class="fa-sharp fa-solid fa-chevron-down"></i>
+                    </div>
+
+                    <div class="text-reviews hidden">
+                        <p>------</p>
+                    </div>
+                </div>
+
+                <!-- Contenedor Redes Sociales-->
+                <div class="container-social">
+                    <span>Compartir</span>
+                    <div class="container-buttons-social">
+                        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                    </div>
+                </div>
+
+            
+        </div>
+    </main>
+
+    <!-- Contenedor Productos Relacionados-->
+    <section class="container-related-products">
+        <h2>Productos Relacionados</h2>
+        <div class="card-list-products">
+
+            <!-- Tarjeta 1-->
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1025&q=80" alt="Producto-1">
+                </div>
+
+                <div class="info-card">
+                    <div class="text-product">
+                        <h3>Nike - Rose Run</h3>
+                        <p class="category">
+                            Footwear, Snekears
+                        </p>
+                    </div>
+                    <div class="price">
+                        S/.85.00
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- Tarjeta 2-->
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1587563871167-1ee9c731aefb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1131&q=80" alt="Producto-2">
+                </div>
+
+                <div class="info-card">
+                    <div class="text-product">
+                        <h3>Common Project - Achilles</h3>
+                        <p class="category">
+                            Footwear, Snekears
+                        </p>
+                    </div>
+                    <div class="price">
+                        S/.255.00
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 3-->
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/flagged/photo-1556637640-2c80d3201be8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Producto-3">
+                </div>
+
+                <div class="info-card">
+                    <div class="text-product">
+                        <h3>Adidas - Boston Super</h3>
+                        <p class="category">
+                            Footwear, Snekears
+                        </p>
+                    </div>
+                    <div class="price">
+                        S/.105.00
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 4-->
+            <div class="card">
+                <div class="card-img">
+                    <img src="https://images.unsplash.com/photo-1617606002779-51d866bdd1d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Producto-4">
+                </div>
+
+                <div class="info-card">
+                    <div class="text-product">
+                        <h3>Converse All Star</h3>
+                        <p class="category">
+                            Footwear, Snekears
+                        </p>
+                    </div>
+                    <div class="price">
+                        S/.250.00
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de Página-->
+    <footer>
+        <p>Todos los Derechos Reservados</p>
+    </footer>
+
+<script src="https://kit.fontawesome.com/3e737fc9b4.js" crossorigin="anonymous"></script>
+<script src="index.js"></script>
+</body>
+</html>
