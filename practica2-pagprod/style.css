@@ -8,7 +8,7 @@
 
 body{
     font-family: "ubuntu";
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 0 auto;
 }
 
@@ -23,11 +23,34 @@ header{
     justify-content: center;
 }
 
+.container-menu{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 50px;
+    padding: 30px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    background-color: #222;
+}
+
+.container-menu a{
+    color: white;
+    text-decoration: none;
+}
+
+.container-menu a:hover{
+    color: #1bbeb4;
+    font-size: 15px;
+}
+
 .container-title{
     padding: 30px;
     background-color: #eee;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     color: #222;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 main{
@@ -63,6 +86,10 @@ main{
     font-weight: 300;
 }
 
+.container-price i:hover{
+    color: #1bbeb4;
+    cursor: pointer;
+}
 .container-details-product{
     padding: 30px 0;
 
@@ -166,6 +193,7 @@ main{
     justify-content: center;
     gap: 5px;
     cursor: pointer;
+    border-radius: 20px;
 }
 
 .btn-add-to-cart:hover{
